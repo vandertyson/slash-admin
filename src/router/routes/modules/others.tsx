@@ -29,6 +29,7 @@ const others: AppRouteObject[] = [
 			label: "sys.menu.calendar",
 			icon: <Iconify icon="solar:calendar-bold-duotone" size={24} />,
 			key: "/calendar",
+			hideMenu: true,
 		},
 	},
 	{
@@ -42,6 +43,7 @@ const others: AppRouteObject[] = [
 			label: "sys.menu.kanban",
 			icon: <Iconify icon="solar:clipboard-bold-duotone" size={24} />,
 			key: "/kanban",
+			hideMenu: true,
 		},
 	},
 	{
@@ -57,6 +59,7 @@ const others: AppRouteObject[] = [
 			),
 			disabled: true,
 			key: "/disabled",
+			hideMenu: true,
 		},
 	},
 	{
@@ -68,6 +71,7 @@ const others: AppRouteObject[] = [
 		),
 		meta: {
 			label: "sys.menu.label",
+			hideMenu: true,
 			icon: (
 				<SvgIcon icon="ic_label" className="ant-menu-item-icon" size="24" />
 			),
@@ -90,6 +94,7 @@ const others: AppRouteObject[] = [
 				<SvgIcon icon="ic_external" className="ant-menu-item-icon" size="24" />
 			),
 			key: "/frame",
+			hideMenu: true,
 		},
 		children: [
 			{
@@ -131,6 +136,7 @@ const others: AppRouteObject[] = [
 				<SvgIcon icon="ic_blank" className="ant-menu-item-icon" size="24" />
 			),
 			key: "/blank",
+			hideMenu: true,
 		},
 	},
 ];

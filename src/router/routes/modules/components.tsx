@@ -36,6 +36,7 @@ const components: AppRouteObject = {
 			/>
 		),
 		key: "/components",
+		hideMenu: true,
 	},
 	children: [
 		{

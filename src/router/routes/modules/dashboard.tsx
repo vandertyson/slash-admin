@@ -8,6 +8,7 @@ import type { AppRouteObject } from "#/router";
 
 const HomePage = lazy(() => import("@/pages/dashboard/workbench"));
 const Analysis = lazy(() => import("@/pages/dashboard/analysis"));
+const InvoiceParser = lazy(() => import("@/pages/ai/InvoiceParser"));
 
 const dashboard: AppRouteObject = {
 	order: 1,
@@ -18,7 +19,7 @@ const dashboard: AppRouteObject = {
 		</Suspense>
 	),
 	meta: {
-		label: "sys.menu.dashboard",
+		label: "AI Tools",
 		icon: (
 			<SvgIcon icon="ic-analysis" className="ant-menu-item-icon" size="24" />
 		),
@@ -32,12 +33,28 @@ const dashboard: AppRouteObject = {
 		{
 			path: "workbench",
 			element: <HomePage />,
-			meta: { label: "sys.menu.workbench", key: "/dashboard/workbench" },
+			meta: {
+				label: "sys.menu.workbench",
+				key: "/dashboard/workbench",
+				hideMenu: true,
+			},
 		},
 		{
 			path: "analysis",
 			element: <Analysis />,
-			meta: { label: "sys.menu.analysis", key: "/dashboard/analysis" },
+			meta: {
+				label: "sys.menu.analysis",
+				key: "/dashboard/analysis",
+				hideMenu: true,
+			},
+		},
+		{
+			path: "parser",
+			element: <InvoiceParser />,
+			meta: {
+				label: "Invoice Parser",
+				key: "/dashboard/parser",
+			},
 		},
 	],
 };

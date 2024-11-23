@@ -26,6 +26,7 @@ const functions: AppRouteObject = {
 			/>
 		),
 		key: "/functions",
+		hideMenu: true,
 	},
 	children: [
 		{

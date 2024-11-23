@@ -25,6 +25,7 @@ const menulevel: AppRouteObject = {
 			<SvgIcon icon="ic-menulevel" className="ant-menu-item-icon" size="24" />
 		),
 		key: "/menu_level",
+		hideMenu: true,
 	},
 	children: [
 		{

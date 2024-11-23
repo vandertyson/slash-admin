@@ -32,6 +32,7 @@ const management: AppRouteObject = {
 			<SvgIcon icon="ic-management" className="ant-menu-item-icon" size="24" />
 		),
 		key: "/management",
+		hideMenu: true,
 	},
 	children: [
 		{
